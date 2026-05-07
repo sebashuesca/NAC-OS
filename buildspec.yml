@@ -2,6 +2,8 @@ version: 0.2
 phases:
   pre_build:
     commands:
+      - echo "Logueando en Amazon ECR..."
+      - aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 297433793747.dkr.ecr.us-east-1.amazonaws.com
       - echo "Iniciando pipeline CI/CD..."
   build:
     commands:
