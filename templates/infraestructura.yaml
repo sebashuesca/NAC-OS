@@ -1,0 +1,17 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: 'Infraestructura como Codigo para IMov (EC2 y S3)'
+Resources:
+  IMovBucketIaC:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: !Sub "imov-iac-data-${AWS::AccountId}"
+
+  IMovServerIaC:
+    Type: AWS::EC2::Instance
+    Properties:
+      InstanceType: t2.micro
+      ImageId: ami-0c101f26f147fa7fd
+      IamInstanceProfile: NAC-OS-EC2-Role
+      Tags:
+        - Key: Name
+          Value: IMov-App-Server

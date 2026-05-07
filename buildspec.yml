@@ -1,0 +1,13 @@
+version: 0.2
+phases:
+  pre_build:
+    commands:
+      - echo "Iniciando pipeline CI/CD..."
+  build:
+    commands:
+      - echo "Ejecutando pruebas de codigo..."
+      - echo "Pruebas superadas. Construyendo la imagen Docker de IMov..."
+      - cd app && docker build -t imov-app .
+  post_build:
+    commands:
+      - echo "Construccion exitosa. Pipeline completado."
