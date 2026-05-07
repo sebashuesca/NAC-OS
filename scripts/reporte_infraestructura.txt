@@ -1,0 +1,24 @@
+=== Reporte de Infraestructura ===
+Fecha de generacion: 2026-05-07 02:30:07
+
+--- Instancias EC2 ---
+ID: i-04fa5d962d077152b, Estado: stopped, Tipo: t3.micro
+ID: i-02af443e5ed2c6722, Estado: running, Tipo: t2.micro
+ID: i-040b7592aeb2f4fbd, Estado: running, Tipo: t3.micro
+ID: i-0abf9d137ca8b1e84, Estado: running, Tipo: t2.micro
+ID: i-098cdc86715ceb663, Estado: running, Tipo: t3.micro
+ID: i-0348cbf9d27fb76ae, Estado: running, Tipo: t3.micro
+ID: i-00ef72e83fa409668, Estado: running, Tipo: t3.micro
+
+--- Buckets S3 ---
+- archivos-transporte-sebashuesca
+- cf-templates-1evbf1cucw01z-us-east-1
+- codepipeline-us-east-1-4815743d2c91-4e9d-8469-80229c3290ce
+- codepipeline-us-east-2-3d8c0c5c7e82-4ef2-8814-2272b64616b4
+- codepipelinestartertempla-codepipelineartifactsbuc-kb0hxo5qvaib
+- devops-julissa-bucket
+- do-not-delete-ssm-diagnosis-297433793747-us-east-1-1t87t
+- erick-transportes3
+- imov-data-sebashuesca
+- mi-bucket-devops-12345
+- stf-datos-logistica-297433793747
