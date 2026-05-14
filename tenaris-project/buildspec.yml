@@ -1,0 +1,18 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      nodejs: 18
+  pre_build:
+    commands:
+      - echo "Iniciando pipeline para Tenaris-SFS..."
+      - npm install
+  build:
+    commands:
+      - echo "Construyendo la aplicacion Next.js..."
+      - npm run build
+      - echo "Creando imagen Docker..."
+      - docker build -t tenaris-app .
+  post_build:
+    commands:
+      - echo "Build completado con exito el $(date)"
